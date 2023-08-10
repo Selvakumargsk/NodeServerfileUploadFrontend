@@ -1,0 +1,126 @@
+.candidatesPage{
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.candidate-list {
+    background-color: #2a2e35;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+.candidate-list img{
+    width: 50px;
+    height: 60px;
+}  
+
+@media screen and (max-width:430px) {    
+    .candidate-list li{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .candidate-list{
+        width: 90%;
+    }
+    .candidate-list button{
+        margin-top: 10px;
+    }
+    .candidate-list img{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:280px) { 
+    .candidate-list div{
+        font-size: 5vw;
+    }
+}       
+
+  
+  .candidate-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .candidate-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #37404c;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .candidate-item:hover {
+    background-color: #485262;
+  }
+  
+  .candidate-item button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .candidate-item button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* candidateDetails page css */
+  /* candidateDetails.css */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  max-width: 70%;
+  max-height: 80%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdf-container {
+  overflow: auto;
+  flex-grow: 1;
+}
+
+button {
+  margin: 10px;
+}
+
+@media screen and (max-width:700px) {
+  .pdf-container{
+    /* overflow-x: scroll; */
+    width: 80%;
+  }
+}
