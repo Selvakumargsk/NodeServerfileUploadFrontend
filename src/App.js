@@ -8,7 +8,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path='/' element={<CandidateRegistrationForm/>}></Route>
+          <Route path='/NodeServerfileUploadFrontend' element={<CandidateRegistrationForm/>}></Route>
           <Route path='/candidates' element={<CandidateList/>}></Route>
         </Routes>
       </Router>
